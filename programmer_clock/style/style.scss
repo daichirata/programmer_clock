@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Share';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Share Bold'), local('Share-Bold'), url('http://themes.googleusercontent.com/static/fonts/share/v1/vq-obeo4cskP3gCfYTOfG3YhjbSpvc47ee6xR_80Hnw.woff') format('woff');
+}
+
+body,header,hgroup,section,footer,div,p,a,img{
+    mergin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+img#bg {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+a, a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+
+header {
+    height: 45px;
+    width: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    hgroup {
+        padding: 8px 0 0 60px;
+        color: #FFF;
+        h1, h2{
+            margin: 0;
+            font-weight: normal;
+        }
+        h1{ font-size: 14px; }
+        h2{ font-size: 7px; }
+    }
+}
+
+section {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -360px;
+    #clock {
+        font-family: 'Share';
+        font-size: 220px;
+        margin: 130px auto 10px;
+    }
+    #word {
+        font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", Osaka,sans-serif;
+        font-weight: 100;
+        font-size: 30px;
+        margin: 0 auto;
+    }
+}
+
+footer {
+    height: 30px;
+    width: 100%;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    #copyright {
+        padding: 3px 60px 0 0;
+        position: relative;
+        float: right;
+    }
+    p {
+        color: #fff;
+        display: inline;
+        font-size: 7px;
+        padding-right: 5px;
+    }
+}

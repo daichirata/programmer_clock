@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>底辺プログラマーが本気だす時計</title>
+        <meta name="description"  content="底辺プログラマが本気だす時計">
+        <meta name="keywords"     content="底辺プログラマが本気だす時計">
+        <link rel="stylesheet" href="<%= assets_path("style/style.css") %>">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="<%= assets_path("script/counter.js") %>"></script>
+        <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <% if ENV['RACK_ENV'] == 'production' %>
+          <script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-22789623-2']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);})();</script>
+        <% end %>
+    </head>
+    <body>
+        <img id="bg" />
+        <header>
+          <hgroup>
+            <h1>底辺プログラマーが本気出す時計</h1>
+            <h2>本家 | <a href="http://honkidasu-tokei.com/">本気出す時計</a></h2>
+          </hgroup>
+        </header>
+        <section>
+          <p id="clock"></p>
+          <p id="word"></p>
+        </section>
+        <footer>
+          <div id="copyright">
+            <p>Photo by </p>
+            <p><small><a href="http://www.yunphoto.net">(c)Tomo.Yun</a></small></p>
+            <p><small><a href="http://imagebase.davidniblack.com/main.php">imagebase</a></small></p>
+          </div>
+        </footer>
+    </body>
+</html>
